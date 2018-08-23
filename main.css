@@ -1,3 +1,32 @@
+body {
+    background: rgb(117,171,188);
+    background: linear-gradient(306deg, rgba(117,171,188,1) 35%, rgba(58,175,185,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header {
+    color: #0b7189;
+    animation: header1 1s forwards 0s linear;
+}
+
 h1 {
     text-align: center;
+    font-family: monospace;
+}
+
+p {
+    color: #ffffff;
+    font-family: monospace;
+}
+
+@keyframes header1 {
+    0%{
+        transform: rotate(0) translateY(-25%);
+        opacity: 0;
+        }
+    100%{
+        transform: rotate(0) translateY(0%);
+        opacity: 1;
+        }
 }
