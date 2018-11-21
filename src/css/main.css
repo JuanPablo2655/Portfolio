@@ -1,0 +1,40 @@
+body, html {
+    font: 1em sans-serif;
+}
+
+main {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.title {
+    font-size: 55px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.sub-title {
+    color: #b2b2b2;
+    font-size: 18px;
+}
+
+.img-size {
+    height: auto; 
+    width: auto; 
+    max-width: 30px; 
+    max-height: 30px;
+}
+
+.img-link {
+    text-decoration: none;
+}
+
+.circle {
+    background: #b2b2b2;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
