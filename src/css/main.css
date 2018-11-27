@@ -1,8 +1,11 @@
 body, html {
     font: 1em sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
-main {
+section {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -19,6 +22,7 @@ main {
 .sub-title {
     color: #b2b2b2;
     font-size: 18px;
+    margin-bottom: 0;
 }
 
 .img-size {
@@ -30,6 +34,23 @@ main {
 
 .img-link {
     text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.img-link i {
+    width: 55px;
+    height: 55px;
+    background-color: #efeded;
+    border-radius: 50%;
+    transition: 0.2s linear;
+    line-height: 55px;
+    margin-top: 18px;
+    margin-right: 5px;
+}
+
+.img-link:hover i {
+    transform: scale(1.3);
 }
 
 .circle {
@@ -37,4 +58,77 @@ main {
     width: 45px;
     height: 45px;
     border-radius: 50%;
+}
+
+header h1 {
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.pg-title {
+    text-align: center;
+}
+
+.card {
+    background-color: #F9F6F6;
+    height: auto;
+    width: auto;
+    max-height: 390px;
+    max-width: 500px;
+    padding: 20px;
+    margin-left: 32px;
+    margin-right: 32px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.card-img {
+    height: 35px;
+    width: 35px;
+    display: block;
+    border-radius: 50%;
+    background-color: #9F9999;
+    float: left;
+}
+
+.card-title {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.card-title h1 {
+    padding-left: 45px;
+}
+
+.card-p {
+    padding-left: 0;
+}
+
+.card-lang {
+    padding: 5px;
+    position: relative;
+    display: inline-block;
+    background-color: #E8CB58;
+    margin-bottom: 10px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.card-footer {
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-img {
+    height: auto; 
+    width: auto; 
+    max-width: 50px; 
+    max-height: 50px;
+    padding-top: 10px;
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
 }
