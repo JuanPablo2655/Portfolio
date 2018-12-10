@@ -1,7 +1,10 @@
 Website:
+  Ideas:
+    ✔ Animate the button that redirects to Projects page. @done(18-12-09 21:55)
   Domain/server:
+    ☐ Push new update when bugs are ironed out.
   Home Page:
-    ☐ Add a button to the Projects page
+    ✔ Add a button to the Projects page. @done(18-12-09 21:55)
   Projects:
     ☐ Make the cards even.
-    ☐ Make the card title format correctly when there's no image.
+    ✔ Make the card title format correctly when there's no image. @done(18-12-09 20:31)
