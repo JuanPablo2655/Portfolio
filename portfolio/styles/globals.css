@@ -1,12 +1,14 @@
 body.dark-mode {
   background-color: #2E3440;
   color: #E5E9F0;
+  -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
 
 body.light-mode {
   background-color: #ECEFF4;
   color: #3B4252;
+  -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
 
@@ -32,5 +34,7 @@ a {
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+/*# sourceMappingURL=globals.css.map */

@@ -1,3 +1,6 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-page-custom-font */
+/* eslint-disable react/no-unescaped-entities */
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -6,9 +9,9 @@ import Head from 'next/head';
 import gitub from "../assets/github.svg";
 import gitlab from "../assets/gitlab.svg";
 import discord from "../assets/discord.svg";
-import toggle from "../assets/switch.svg";
 
 const Home = () => {
+  const hello = ["Hello", "Hola"];
   return (
     <>
     <Head>
@@ -23,7 +26,7 @@ const Home = () => {
       <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
     </Head>
       <div className={styles.maincontent}>
-        <h1>Hello, I'm Isidro</h1>
+        <h1>{hello[Math.floor(Math.random()*hello.length)]}, I'm Isidro</h1>
         <p>Just a 19 year old programmer.</p>
       </div>
       <div className={styles.links}>

@@ -1,0 +1,45 @@
+.maincontent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+  
+.image {
+    filter: invert(97%) sepia(2%) saturate(1216%) hue-rotate(188deg) brightness(98%) contrast(93%);
+}
+  
+.links {
+    position: absolute;
+    top: 50%;
+    left: 98%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+.linklist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    filter: invert(97%) sepia(2%) saturate(1216%) hue-rotate(188deg) brightness(98%) contrast(93%);
+}
+  
+// body {
+//     .dark-mode {
+//         .linklist {
+//             filter: invert(97%) sepia(2%) saturate(1216%) hue-rotate(188deg) brightness(98%) contrast(93%);
+//         }
+//     }
+// }
+  
+// body {
+//     .light-mode {
+//         .linklist {
+//             filter: invert(26%) sepia(10%) saturate(951%) hue-rotate(184deg) brightness(94%) contrast(96%);
+//         }
+//     }
+// }

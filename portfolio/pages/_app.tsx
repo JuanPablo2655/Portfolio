@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import useDarkMode from 'use-dark-mode'
