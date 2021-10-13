@@ -8,6 +8,7 @@ import Head from 'next/head';
 import { Discord } from "../assets/Discord";
 import { Github } from '../assets/Github';
 import { Gitlab } from '../assets/Gitlab';
+import { Linkedin } from '../assets/Linkedin';
 
 const Home = () => {
   const hello = ["Hello", "Hola"];
@@ -33,6 +34,7 @@ const Home = () => {
           <li><Link href="https://github.com/JuanPablo2655"><a target="_blank"><Github /></a></Link></li>
           <li><Link href="https://gitlab.com/JuanPablo2655"><a target="_blank"><Gitlab /></a></Link></li>
           <li><Link href="https://discord.gg/kWvkjh4"><a target="_blank"><Discord /></a></Link></li>
+          <li><Link href="https://discord.gg/kWvkjh4"><a target="_blank"><Linkedin /></a></Link></li>
         </ul>
       </div>
     </>
