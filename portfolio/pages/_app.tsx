@@ -2,9 +2,8 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import useDarkMode from 'use-dark-mode'
-import Image from 'next/image';
-import toggle from "../assets/switch.svg";
 import { useEffect, useState } from 'react';
+import { Switch } from '../assets/Switch';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   const [isMounted, setIsMounted] = useState(false);
@@ -15,7 +14,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   
   return (
     <>
-      <button onClick={darkMode.value === true ? darkMode.disable : darkMode.enable}><Image src={toggle} /></button>
+      <button onClick={darkMode.value === true ? darkMode.disable : darkMode.enable}><Switch /></button>
       {isMounted && <Component {...pageProps} />}
     </>
   )

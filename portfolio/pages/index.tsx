@@ -3,12 +3,11 @@
 /* eslint-disable react/no-unescaped-entities */
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
-import Image from 'next/image';
 import Head from 'next/head';
 
-import gitub from "../assets/github.svg";
-import gitlab from "../assets/gitlab.svg";
-import discord from "../assets/discord.svg";
+import { Discord } from "../assets/Discord";
+import { Github } from '../assets/Github';
+import { Gitlab } from '../assets/Gitlab';
 
 const Home = () => {
   const hello = ["Hello", "Hola"];
@@ -31,9 +30,9 @@ const Home = () => {
       </div>
       <div className={styles.links}>
         <ul className={styles.linklist}>
-          <li><Link href="https://github.com/JuanPablo2655"><a target="_blank"><Image src={gitub} /></a></Link></li>
-          <li><Link href="https://gitlab.com/JuanPablo2655"><a target="_blank"><Image src={gitlab} /></a></Link></li>
-          <li><Link href="https://discord.gg/kWvkjh4"><a target="_blank"><Image src={discord} /></a></Link></li>
+          <li><Link href="https://github.com/JuanPablo2655"><a target="_blank"><Github /></a></Link></li>
+          <li><Link href="https://gitlab.com/JuanPablo2655"><a target="_blank"><Gitlab /></a></Link></li>
+          <li><Link href="https://discord.gg/kWvkjh4"><a target="_blank"><Discord /></a></Link></li>
         </ul>
       </div>
     </>
