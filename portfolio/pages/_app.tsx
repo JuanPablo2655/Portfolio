@@ -9,7 +9,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   const [isMounted, setIsMounted] = useState(false);
   const darkMode = useDarkMode(true);
   useEffect(() => {
-    setIsMounted(true)
+    setIsMounted(true);
   }, [])
   
   return (

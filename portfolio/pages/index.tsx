@@ -31,10 +31,10 @@ const Home = () => {
       </div>
       <div className={styles.links}>
         <ul className={styles.linklist}>
-          <li><Link href="https://github.com/JuanPablo2655"><a target="_blank"><Github /></a></Link></li>
-          <li><Link href="https://gitlab.com/JuanPablo2655"><a target="_blank"><Gitlab /></a></Link></li>
-          <li><Link href="https://discord.gg/kWvkjh4"><a target="_blank"><Discord /></a></Link></li>
-          <li><Link href="https://discord.gg/kWvkjh4"><a target="_blank"><Linkedin /></a></Link></li>
+          <li><Link href="https://github.com/JuanPablo2655" passHref><a target="_blank"><Github /></a></Link></li>
+          <li><Link href="https://gitlab.com/JuanPablo2655" passHref><a target="_blank"><Gitlab /></a></Link></li>
+          <li><Link href="https://discord.gg/kWvkjh4" passHref><a target="_blank"><Discord /></a></Link></li>
+          <li><Link href="https://www.linkedin.com/in/isidro-casiano-pineda" passHref><a target="_blank"><Linkedin /></a></Link></li>
         </ul>
       </div>
     </>
