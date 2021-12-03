@@ -25,7 +25,7 @@ const Home = () => {
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
       <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
     </Head>
-      <div className={styles.maincontent}>
+      <div className="flex justify-center items-center h-screen">
         <h1>{hello[Math.floor(Math.random()*hello.length)]}, I'm Isidro</h1>
         <p>Just a 19 year old programmer.</p>
       </div>
