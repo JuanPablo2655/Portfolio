@@ -99,3 +99,17 @@ footer button:hover {
     color: var(--secondary-color);
 }
 
+@media only screen and (max-device-width: 930px) {
+    body main {
+        flex-direction: column;
+    }
+
+    .container-img {
+        padding: 0 0 15px 0;
+    }
+
+    .container-content {
+        padding: 15px 0 0 0;
+        text-align: center;
+    }
+}
