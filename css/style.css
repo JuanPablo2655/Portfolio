@@ -73,6 +73,7 @@ body aside ul li:nth-child(1), body aside ul li:nth-child(2) {
 
 li a {
     color: var(--primary-color);
+    text-decoration: none;
 }
 
 li a:hover {
