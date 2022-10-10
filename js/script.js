@@ -1,6 +1,6 @@
 const button = document.querySelector('#mode');
 
-const dark = localStorage.getItem('dark') === 'true' ?? true;
+const dark = localStorage.getItem('dark') ? localStorage.getItem('dark') === 'true' : true;
 
 button?.addEventListener('click', () => {
 	if (dark) {
