@@ -17,3 +17,13 @@ button?.addEventListener('click', () => {
 		location.reload();
 	}
 });
+
+// const main = document.querySelector('body');
+// main.setAttribute('style', `min-height: ${window.innerHeight}px`);
+// window.addEventListener('resize', () => {
+// 	main.setAttribute('style', `min-height: ${window.innerHeight}px`);
+// });
+
+const p = document.querySelector('p');
+const age = new Date().getFullYear() - 2002;
+p.innerHTML = `I'm just a ${age} year old programmer`;
