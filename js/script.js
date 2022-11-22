@@ -1,29 +1,19 @@
 const button = document.querySelector('#mode');
 
-const dark = localStorage.getItem('dark') ? localStorage.getItem('dark') === 'true' : true;
-
 button?.addEventListener('click', () => {
+	const dark = localStorage.getItem('dark') ? localStorage.getItem('dark') === 'true' : true;
+	console.log(button);
 	if (dark) {
-		document.querySelector(':root')?.style.setProperty('--primary-color', '#3B4252');
-		document.querySelector(':root')?.style.setProperty('--primary-bg-color', '#ECEFF4');
-		document.querySelector(':root')?.style.setProperty('--secondary-color', '#88C0D0');
+		document.body.classList.remove('dark');
 		localStorage.setItem('dark', 'false');
-		location.reload();
+		// location.reload();
 	} else {
-		document.querySelector(':root')?.style.setProperty('--primary-color', '#E5E9F0');
-		document.querySelector(':root')?.style.setProperty('--primary-bg-color', '#2E3440');
-		document.querySelector(':root')?.style.setProperty('--secondary-color', '#88C0D0');
+		document.body.classList.add('dark');
 		localStorage.setItem('dark', 'true');
-		location.reload();
+		// location.reload();
 	}
 });
 
-// const main = document.querySelector('body');
-// main.setAttribute('style', `min-height: ${window.innerHeight}px`);
-// window.addEventListener('resize', () => {
-// 	main.setAttribute('style', `min-height: ${window.innerHeight}px`);
-// });
-
 const p = document.querySelector('p');
 const age = new Date().getFullYear() - 2002;
-p.innerHTML = `I'm just a ${age} year old programmer`;
+p.innerText = `I'm just a ${age} year old programmer`;
