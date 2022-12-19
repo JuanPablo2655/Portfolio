@@ -6,11 +6,9 @@ button?.addEventListener('click', () => {
 	if (dark) {
 		document.body.classList.remove('dark');
 		localStorage.setItem('dark', 'false');
-		// location.reload();
 	} else {
 		document.body.classList.add('dark');
 		localStorage.setItem('dark', 'true');
-		// location.reload();
 	}
 });
 
