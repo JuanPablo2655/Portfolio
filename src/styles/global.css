@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ===== Theme Variables ===== */
+:root {
+    --c-bg: #fafafa;
+    --c-bg-alt: #ffffff;
+    --c-fg: #111111;
+    --c-fg-muted: #555555;
+    --c-fg-subtle: #888888;
+    --c-border: #e2e2e2;
+    --c-pill: #f0f0f0;
+    --c-pill-hover: #e4e4e4;
+    --c-ring: rgba(0, 0, 0, 0.08);
+}
+
+.dark {
+    --c-bg: #0e0e0e;
+    --c-bg-alt: #181818;
+    --c-fg: #ececec;
+    --c-fg-muted: #a0a0a0;
+    --c-fg-subtle: #666666;
+    --c-border: #252525;
+    --c-pill: #1a1a1a;
+    --c-pill-hover: #252525;
+    --c-ring: rgba(255, 255, 255, 0.08);
+}
+
+/* ===== Tailwind Theme Tokens ===== */
+@theme inline {
+    --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+    --color-surface: var(--c-bg);
+    --color-surface-alt: var(--c-bg-alt);
+    --color-foreground: var(--c-fg);
+    --color-muted: var(--c-fg-muted);
+    --color-subtle: var(--c-fg-subtle);
+    --color-outline: var(--c-border);
+    --color-pill: var(--c-pill);
+    --color-pill-hover: var(--c-pill-hover);
+    --color-ring: var(--c-ring);
+}
+
+/* ===== Entrance Animation ===== */
+@keyframes fade-slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@utility animate-in {
+    opacity: 0;
+    transform: translateY(16px);
+    animation: fade-slide-in 0.6s ease forwards;
+    animation-delay: var(--delay, 0s);
+}
+
+/* ===== Reduced Motion ===== */
+@media (prefers-reduced-motion: reduce) {
+    .animate-in {
+        opacity: 1;
+        transform: none;
+        animation: none;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+}

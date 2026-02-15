@@ -1,0 +1,78 @@
+---
+import { Image } from "astro:assets";
+import { Icon } from "astro-icon/components";
+import picture from "../images/picture.png";
+---
+
+<section class="max-w-120 w-full flex flex-col items-center text-center gap-6">
+    <div class="relative animate-in" style="--delay: 0s">
+        <Image
+            src={picture}
+            alt="Isidro Casiano-Pineda"
+            width={120}
+            height={120}
+            class="size-30 max-sm:size-25 rounded-full object-cover block border-[3px] border-ring transition-all duration-300 ease-out hover:scale-105 hover:border-subtle"
+        />
+    </div>
+
+    <div class="flex flex-col gap-1 animate-in" style="--delay: 0.1s">
+        <h1
+            class="text-[1.75rem] max-sm:text-2xl font-semibold tracking-tighter leading-tight text-foreground transition-colors duration-300"
+        >
+            Isidro Casiano-Pineda
+        </h1>
+        <p
+            class="text-base font-normal text-muted tracking-tight transition-colors duration-300"
+        >
+            Software Engineer
+        </p>
+    </div>
+
+    <div
+        class="flex flex-wrap justify-center gap-2.5 animate-in"
+        style="--delay: 0.3s"
+    >
+        <a
+            href="https://github.com/JuanPablo2655"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group inline-flex items-center gap-1.5 px-4 py-2 text-[0.8125rem] font-medium text-muted no-underline bg-pill border border-outline rounded-full transition-all duration-300 hover:text-foreground hover:bg-pill-hover hover:border-subtle hover:shadow-sm hover:-translate-y-px active:translate-y-0"
+            aria-label="GitHub"
+        >
+            <Icon
+                name="tabler:brand-github"
+                size={16}
+                class="shrink-0 transition-transform duration-200 group-hover:scale-110"
+            />
+            <span>GitHub</span>
+        </a>
+        <a
+            href="https://gitlab.com/JuanPablo2655"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group inline-flex items-center gap-1.5 px-4 py-2 text-[0.8125rem] font-medium text-muted no-underline bg-pill border border-outline rounded-full transition-all duration-300 hover:text-foreground hover:bg-pill-hover hover:border-subtle hover:shadow-sm hover:-translate-y-px active:translate-y-0"
+            aria-label="GitLab"
+        >
+            <Icon
+                name="tabler:brand-gitlab"
+                size={16}
+                class="shrink-0 transition-transform duration-200 group-hover:scale-110"
+            />
+            <span>GitLab</span>
+        </a>
+        <a
+            href="https://www.linkedin.com/in/isidro-casiano-pineda"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group inline-flex items-center gap-1.5 px-4 py-2 text-[0.8125rem] font-medium text-muted no-underline bg-pill border border-outline rounded-full transition-all duration-300 hover:text-foreground hover:bg-pill-hover hover:border-subtle hover:shadow-sm hover:-translate-y-px active:translate-y-0"
+            aria-label="LinkedIn"
+        >
+            <Icon
+                name="tabler:brand-linkedin"
+                size={16}
+                class="shrink-0 transition-transform duration-200 group-hover:scale-110"
+            />
+            <span>LinkedIn</span>
+        </a>
+    </div>
+</section>

@@ -1,0 +1,71 @@
+---
+import "../styles/global.css";
+
+interface Props {
+    title?: string;
+    description?: string;
+}
+
+const {
+    title = "Isidro Casiano-Pineda",
+    description = "Software Engineer — Personal Portfolio",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content={description} />
+        <meta
+            name="keywords"
+            content="portfolio, software engineer, developer"
+        />
+        <meta name="author" content="Isidro Casiano-Pineda" />
+        <meta name="generator" content={Astro.generator} />
+
+        <!-- Open Graph -->
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:url" content="https://isidrocasiano.com" />
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:image"
+            content="https://isidrocasiano.com/og-banner.png"
+        />
+
+        <meta name="theme-color" content="#111111" />
+
+        <!-- Favicons -->
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" href="/favicon.ico" />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>{title}</title>
+
+        <!-- Theme init (inline to prevent FOUC) -->
+        <script is:inline>
+            (function () {
+                const stored = localStorage.getItem("theme");
+                const prefersDark = window.matchMedia(
+                    "(prefers-color-scheme: dark)",
+                ).matches;
+                const isDark = stored ? stored === "dark" : prefersDark;
+                if (isDark) document.documentElement.classList.add("dark");
+            })();
+        </script>
+    </head>
+    <body
+        class="min-h-screen flex flex-col bg-surface text-foreground font-sans leading-relaxed antialiased transition-colors duration-300 ease-[cubic-bezier(0.4,0,0.2,1)]"
+    >
+        <slot />
+    </body>
+</html>
